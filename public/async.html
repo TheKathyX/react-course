@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <span>Promises and Async</span>
+        <script>
+            function consumeWebService(){
+                fetch("https://jsonplaceholder.typicode.com/todos/1")
+                .then(response => response.json())
+                .catch(error => alert('something bad just happened'))
+                .then(json => console.log(json));
+                // We are saying fetch and get the response into a function and executing a json function 
+            }
+
+            async function consumeWebService(){
+                try {
+                    const repsonse = await fetch("https://jsonplaceholder.typicode.com/todo/1");
+                    const json = await repsonse.json();
+                    console.log(json);
+                    // await allows him to indicate to javascript that this is async opteration so he only wants to execute the function when the async is processed  
+                    
+                } catch (ex) {
+                    alert('something bad just happened :(');
+                }
+            }
+
+            // They both do the same but the top function has a catch
+            //
+
+        </script>
+    </body>
+    </html>
