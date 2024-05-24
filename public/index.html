@@ -38,8 +38,10 @@
         exampleHTML.innerHTML = `
         <h3>Example HTML</h3>
         <input />
-        <div>${new Date()}</div>`;
+        <div>${new Date()}</div>
+        `;
       }
+      setInterval(render, 1000);
     </script>
     <!--
       This HTML file is a template.
