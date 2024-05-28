@@ -25,6 +25,8 @@ return (
 
 }
 
+export default App;
+
 
 
 
