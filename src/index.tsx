@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Simple from './simple';
 import Expressions from './Expressions';
+import Events from './Events'
 
 ReactDOM.render(
     <React.StrictMode>
